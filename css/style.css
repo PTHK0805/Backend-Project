@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+nav {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: rgb(197, 228, 255);
+}
+
+.nav-right-blk {
+  float: right;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.cart {
+  padding-right: 50px;
+  position: relative;
+}
+
+.cart::after {
+  content: '2';
+  position: absolute;
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
+  width: 20px;
+  height: 17px;
+  text-align: center;
+}
+
+.user {
+  font-size: 25px;
+}
+
+.left-blk {
+  float: left;
+}
+
+.list-item {
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 17px 100px 17px 10px;
+}
+
+.right-blk {
+  float: right;
+  width: 70%;
+}
+
+.item {
+  float: left;
+  width: 22%;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.item-img {
+  height: 200px;
+  background-color: rgb(9, 207, 141);
+  margin-bottom: 3px;
+  border-radius: 5px 5px 0 0;
+
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  background-color: rgb(18, 12, 4);
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 0 0 5px 5px;
+  
+}
+
+.btn-click {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-quantity {
+  display: inline-block;
+  padding: 8px 7px;
+  width: 30px;
+  background-color: rgb(18, 12, 4);
+  color: #fff;
+}
+
+.btn-quantity-plus{
+  border-radius: 0 5px 5px 0;
+}
+
+.btn-quantity-minus {
+  border-radius:5px 0 0 5px;
+}
+
+.quantity {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 5px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 17px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ccc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

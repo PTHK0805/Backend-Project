@@ -1,0 +1,25 @@
+table, th, tr, td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+
+table {
+  width: 100%;
+}
+
+tfoot tr:first-of-type {
+  text-align: center;
+}
+.btn-click {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100px;
+  background-color: rgb(89, 89, 242);
+  border-radius: 5px;
+}
